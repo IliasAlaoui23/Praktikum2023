@@ -1,0 +1,9 @@
+stundenlohn = input("Bitte Gebe deinen Stundenlohn ein: ")
+tag = 8 * int(stundenlohn)
+monat = tag * 20
+year = monat * 12
+
+print("Dein Stundenlohn beträgt " + str(stundenlohn) + "$")
+print("Du vrdienst " + str(tag) + "$ pro Tag")
+print("Dein Monatsgehalt beträgt " + str(monat) + "$")
+print("Du hast ein Jahresgehalt von " + str(year) + "$")
