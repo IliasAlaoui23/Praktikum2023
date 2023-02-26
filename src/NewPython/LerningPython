@@ -1,8 +1,8 @@
-name = input("Bitte gebe den namen ein: ")
+name = input("Bitte gebe den Namen ein: ")
 
-mein_name = "Ilias Alaoui"
-age = "14"
-city = "Darmstadt"
+mein_name = input("Bitte gebe deinen Namen ein: ")
+age = input("Bitte gebe dein Alter ein: ")
+city = input("Bitte gebe deine Stadt ein: ")
 
 is_woman = False
 
@@ -14,4 +14,4 @@ print(" ")
 print("Mein Name ist " + mein_name + ".")
 print("Ich bin " + age + " Jahre alt" + ".")
 print("Ich komme aus " + city + ".")
-input("Bitte beliebige Taste drücken : ")
+input(" ")
