@@ -1,7 +1,11 @@
+input(" ")
+
 stundenlohn = input("Bitte Gebe deinen Stundenlohn ein: ")
 tag = 8 * int(stundenlohn)
 monat = tag * 20
 year = monat * 12
+
+input(" ")
 
 print("Dein Stundenlohn beträgt " + str(stundenlohn) + "$")
 print("Du vrdienst " + str(tag) + "$ pro Tag")
