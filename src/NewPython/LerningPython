@@ -1,17 +1,33 @@
-name = input("Bitte gebe den Namen ein: ")
+name = input("Bitte gebe den Namen der ziel Person einein: ")
+
+
+while True:
+    MOderW = input("Ist die Person ein Männlich oder eine Weiblich? (M/W): ").strip().upper()
+    if MOderW == "M":
+        is_woman = False
+        break
+    elif MOderW == "W": 
+        is_woman = True
+        break
+    else:
+        print("Ungültige Eingabe. Bitte geben Sie 'M' für Männlich oder 'W' für Weiblich ein.")
+        
 
 mein_name = input("Bitte gebe deinen Namen ein: ")
-age = input("Bitte gebe dein Alter ein: ")
+age = int(input("Bitte gebe dein Alter ein: "))
 city = input("Bitte gebe deine Stadt ein: ")
 
-is_woman = False
+print(" ")
+print("-" * 100)
+print(" ")
 
 if is_woman:
     print("Sehr geehrte Frau " + name + ",")
 else:
     print("Sehr geehrter Herr " + name + ",")
+
 print(" ")
 print("Mein Name ist " + mein_name + ".")
-print("Ich bin " + age + " Jahre alt" + ".")
+print("Ich bin " + str(age) + " Jahre alt" + ".")
 print("Ich komme aus " + city + ".")
 input(" ")
