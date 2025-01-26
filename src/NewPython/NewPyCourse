@@ -1,0 +1,22 @@
+import time
+
+Time = int(input("Enter the time in seconds: "))
+
+for seconds in range(Time, 0, -1):
+    days = seconds // 86400
+    hours = (seconds % 86400) // 3600
+    minutes = (seconds % 3600) // 60
+    seconds_left = seconds % 60
+
+    if days > 0:
+        print(f"{days:02}:{hours:02}:{minutes:02}:{seconds_left:02}")
+    elif hours > 0:
+        print(f"{hours:02}:{minutes:02}:{seconds_left:02}")
+    elif minutes > 0:
+        print(f"00:{minutes:02}:{seconds_left:02}")
+    else:
+        print(f"00:00:{seconds_left:02}")
+
+    time.sleep(1)
+
+print("Time is up!")
