@@ -1,8 +1,10 @@
 
 
 stundenlohn = input("Bitte Gebe deinen Stundenlohn ein: ")
-tag = 8 * int(stundenlohn)
-monat = tag * 20
+arbeitszeit = input("Bitte gebe deine tägliche Arbeitszeit in Stunden ein: ")   
+tag = arbeitszeit * int(stundenlohn)
+arbeitszeitImMonat = input("Wie oft Arbeitest du im monat?: ")
+monat = tag * arbeitszeitImMonat
 year = monat * 12
 
 
